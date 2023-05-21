@@ -1,0 +1,51 @@
+{
+  "name": "vue-battlefield1",
+  "version": "1.0.0",
+  "description": "the battlefield 1 client with electron and vue",
+  "main": "electron/main.js",
+  "author": "crazyzhang",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "wait-on tcp:5173 && cross-env NODE_ENV=development electron .",
+    "electron:serve": "concurrently -k \"npm run dev\" \"npm run electron\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "date-fns": "^2.30.0",
+    "pinia": "^2.1.3",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "uuid": "^9.0.0",
+    "vue": "^3.3.2",
+    "vue-router": "^4.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^24.3.1",
+    "electron-builder": "^23.6.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "vite": "^4.3.5",
+    "wait-on": "^7.0.1"
+  },
+  "build": {
+    "appId": "com.vue.battlefield1",
+    "productName": "Battlefield™ 1",
+    "copyright": "Copyright © 2023 By CrazyZhang",
+    "win": {
+      "icon": "./public/favicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "output": "dist_electron"
+    }
+  }
+}
