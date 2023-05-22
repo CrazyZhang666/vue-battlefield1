@@ -106,7 +106,7 @@ onMounted(() => {
         <div>{{ server.mapModePretty }} - {{ server.mapNamePretty }}</div>
         <div v-if="server.isCustom">&nbsp;-</div>
         <div class="custom" v-if="server.isCustom">&nbsp;自定</div>
-        <div>&nbsp;- {{ server.tickRate }}HZ</div>
+        <div class="tick">&nbsp;- {{ server.tickRate }}HZ</div>
         <div class="official" v-if="server.isOfficial">[官服]</div>
         <div>|</div>
         <div class="count">
@@ -139,9 +139,10 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  white-space: nowrap;
 
   .header {
-    margin: 20px 20px 0 20px;
+    margin: 15px 20px 5px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,10 +158,6 @@ onMounted(() => {
       align-items: center;
       font-size: 12px;
 
-      > div {
-        margin-right: 10px;
-      }
-
       img {
         width: 20px;
         box-shadow: 0 0 3px black;
@@ -169,6 +166,14 @@ onMounted(() => {
 
       .custom {
         color: #FF9900;
+      }
+
+      .tick{
+        margin-right: 10px;
+      }
+
+      .tick ~ div {
+        margin-right: 10px;
       }
 
       .official {
