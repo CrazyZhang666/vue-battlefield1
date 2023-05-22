@@ -1,7 +1,6 @@
 <script setup>
 import NavMenu from "@/components/menu/NavMenu.vue";
 import NavParty from "@/components/party/NavParty.vue";
-
 </script>
 
 <template>

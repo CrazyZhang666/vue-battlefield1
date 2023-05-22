@@ -102,7 +102,9 @@ onMounted(() => {
     <div class="header">
       <div class="title">{{ server.name }}</div>
       <div class="details">
-        <img :src="server.regionImage" :title="server.region"/>
+        <div class="country">
+          <img :src="server.countryImage" :title="server.country"/>
+        </div>
         <div>{{ server.mapModePretty }} - {{ server.mapNamePretty }}</div>
         <div v-if="server.isCustom">&nbsp;-</div>
         <div class="custom" v-if="server.isCustom">&nbsp;自定</div>
@@ -158,10 +160,18 @@ onMounted(() => {
       align-items: center;
       font-size: 12px;
 
-      img {
+      .country {
         width: 20px;
-        box-shadow: 0 0 3px black;
+        height: 14px;
         margin-right: 10px;
+        box-shadow: 0 0 3px black;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
       .custom {

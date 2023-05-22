@@ -1,8 +1,8 @@
 <script setup>
 import Avatar from "@/components/Avatar.vue";
 
-import icon_player from "@/assets/images/menu/menu-icon-player.png";
-import icon_add from "@/assets/images/party/icon-add-white.png";
+import icon_player from "../../../public/images/menu/menu-icon-player.png";
+import icon_add from "../../../public/images/party/icon-add-white.png";
 
 </script>
 
@@ -10,13 +10,13 @@ import icon_add from "@/assets/images/party/icon-add-white.png";
   <div class="party-box">
     <div class="party-content">
       <div class="party">
-        <img src="@/assets/images/party/party-minimized.png">
+        <img src="/public/images/party/party-minimized.png">
       </div>
       <div class="add">
         <Avatar :icon="icon_add" color="translate"/>
       </div>
       <div class="playing">
-        <img src="@/assets/images/party/playing-minimized.png">
+        <img src="/public/images/party/playing-minimized.png">
       </div>
       <div class="playing-list">
         <Avatar :icon="icon_player" v-for="index of 20" :key="index"/>

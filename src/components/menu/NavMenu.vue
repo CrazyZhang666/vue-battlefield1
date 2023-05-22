@@ -1,19 +1,19 @@
 <script setup>
 import Menu from "@/components/Menu.vue";
 
-import icon_bfv from "@/assets/images/menu/menu-icon-bfv.png";
-import icon_bf1 from "@/assets/images/menu/menu-icon-bf1.png";
-import icon_bf4 from "@/assets/images/menu/menu-icon-bf4.png";
-import icon_bfh from "@/assets/images/menu/menu-icon-bfh.png";
+import icon_bfv from "../../../public/images/menu/menu-icon-bfv.png";
+import icon_bf1 from "../../../public/images/menu/menu-icon-bf1.png";
+import icon_bf4 from "../../../public/images/menu/menu-icon-bf4.png";
+import icon_bfh from "../../../public/images/menu/menu-icon-bfh.png";
 
-import icon_player from "@/assets/images/menu/menu-icon-player.png";
+import icon_player from "../../../public/images/menu/menu-icon-player.png";
 
-import icon_platoons from "@/assets/images/menu/menu-icon-platoons.png";
-import icon_video from "@/assets/images/menu/menu-icon-video.png";
-import icon_news from "@/assets/images/menu/menu-icon-news.png";
+import icon_platoons from "../../../public/images/menu/menu-icon-platoons.png";
+import icon_video from "../../../public/images/menu/menu-icon-video.png";
+import icon_news from "../../../public/images/menu/menu-icon-news.png";
 
-import icon_help from "@/assets/images/menu/menu-icon-help.png";
-import icon_quit from "@/assets/images/menu/menu-icon-quit.png";
+import icon_help from "../../../public/images/menu/menu-icon-help.png";
+import icon_quit from "../../../public/images/menu/menu-icon-quit.png";
 
 </script>
 
