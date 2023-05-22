@@ -12,9 +12,9 @@ const props = defineProps({
   <div class="player-main">
     <div class="index">{{ index + 1 }}</div>
     <img class="rankImage" :src="getRankImage(player.rank)">
-    <div class="rank">{{ player.rank }}</div>
-    <div class="name">{{ player.name }}</div>
-    <div class="time">{{ player.time }} 分鐘</div>
+    <div class="rank" :class="{'rank-150' : player.rank === 150}">{{ player.rank }}</div>
+    <div class="name" :class="{'name-VIP' : player.isVIP, 'name-Admin' : player.isAdmin}">{{ player.name }}</div>
+    <div class="time">{{ player.playTime }} 分鐘</div>
     <div class="latency">{{ player.latency }} ms</div>
   </div>
 </template>
@@ -55,8 +55,20 @@ const props = defineProps({
     border: 1px solid gray;
   }
 
+  .rank-150 {
+    background-color: #E7B959;
+  }
+
   .name {
     flex: 1;
+  }
+
+  .name-VIP {
+    color: #02A0E2;
+  }
+
+  .name-Admin {
+    color: #FF9900;
   }
 
   .time {

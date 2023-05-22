@@ -8,7 +8,7 @@ const store = useConfigStore();
 
 const welcomeMsg = ref("CrazyZhang666，快樂星期五。")
 
-async function checkSessionId() {
+function checkSessionId() {
   if (!isNotEmptyStr(store.sessionId)) {
     welcomeMsg.value = "SessionId 為空或不正確";
     return;

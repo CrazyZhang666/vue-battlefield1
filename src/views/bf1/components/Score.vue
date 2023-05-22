@@ -5,6 +5,7 @@ import {getPlayerRank, getPlayerTime} from "@/utils/player";
 
 import Player from "@/views/bf1/components/Player.vue";
 import Spinner from "@/components/Spinner.vue";
+import {tr} from "date-fns/locale";
 
 const props = defineProps({
   server: Object
@@ -20,16 +21,25 @@ onMounted(() => {
 
   bf1_getBlazePlayerList(props.server.gameId).then(res => {
 
-    res.data.LGAM[0].PROS.forEach(item => {
+    let data = res.data.LGAM[0];
+
+    data.PROS.forEach(item => {
       let player = {
         teamId: item.TIDX,
         pid: item.EXID,
         rank: getPlayerRank(item.PATT.rank),
         name: item.NAME,
-        time: getPlayerTime(item.TIME),
+        playTime: getPlayerTime(item.TIME),
         latency: item.PATT.latency,
+        isAdmin: false,
+        isVIP: false,
+        lifeKD: 0.0,
+        lifeKPM: 0.0,
+        lifeTime: 0.0,
       };
 
+      // 0 为队伍1
+      // 1 为队伍2
       if (player.teamId === 0) {
         team1Player.value.push(player);
       } else {
@@ -37,12 +47,46 @@ onMounted(() => {
       }
     });
 
+    // 按照等级排序
     team1Player.value.sort((a, b) => {
       return b.rank - a.rank;
     });
     team2Player.value.sort((a, b) => {
       return b.rank - a.rank;
     });
+
+    let temp = data.GAME.ATTR;
+
+    let adminString = temp.admins1.concat(temp.admins2, temp.admins3, temp.admins4);
+    let adminList = adminString.split(";").map(Number);
+
+    let vipString = temp.vips1.concat(temp.vips2, temp.vips3, temp.vips4);
+    let vipList = vipString.split(";").map(Number);
+
+    // console.log(adminList);
+    // console.log(vipList);
+
+    // 管理员列表
+    team1Player.value.forEach(player => {
+      if (adminList.indexOf(player.pid) != -1) {
+        player.isAdmin = true;
+      }
+      if (vipList.indexOf(player.pid) != -1) {
+        player.isVIP = true;
+      }
+    });
+    // VIP列表
+    team2Player.value.forEach(player => {
+      if (adminList.indexOf(player.pid) != -1) {
+        player.isAdmin = true;
+      }
+      if (vipList.indexOf(player.pid) != -1) {
+        player.isVIP = true;
+      }
+    });
+
+    // console.log(team1Player)
+    // console.log(team2Player)
 
     isLoading.value = false;
 
