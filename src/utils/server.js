@@ -78,41 +78,43 @@ function isOfficialServer(serverType) {
     return serverType === "OFFICIAL";
 }
 
-function getPingImage(region) {
-    switch (region.toLowerCase()) {
-        case "asia":
-            return "/public/images/ping/ping-good.png";
-        case "eu":
-            return "/public/images/ping/ping-ok.png";
-        case "oc":
-            return "/public/images/ping/ping-ok.png";
-        case "nam":
-            return "/public/images/ping/ping-bad.png";
-        case "sam":
-            return "/public/images/ping/ping-bad.png";
-        case "afr":
-            return "/public/images/ping/ping-worst.png";
+function getPingImageMore(country) {
+    switch (country.toLowerCase()) {
+        case "hk":
+            return {
+                image: "/public/images/ping/ping-best.png",
+                ping: 34
+            };
+        case "jp":
+            return {
+                image: "/public/images/ping/ping-good.png",
+                ping: 56
+            };
+        case "de":
+            return {
+                image: "/public/images/ping/ping-ok.png",
+                ping: 149
+            };
+        case "au":
+            return {
+                image: "/public/images/ping/ping-bad.png",
+                ping: 180
+            };
+        case "us":
+            return {
+                image: "/public/images/ping/ping-worst.png",
+                ping: 206
+            };
+        case "br":
+            return {
+                image: "/public/images/ping/ping-worst.png",
+                ping: 231
+            };
         default:
-            return "/public/images/ping/ping-unknown.png";
-    }
-}
-
-function getPingNumber(region) {
-    switch (region.toLowerCase()) {
-        case "asia":
-            return 45;
-        case "eu":
-            return 149;
-        case "oc":
-            return 135;
-        case "nam":
-            return 205;
-        case "sam":
-            return 231;
-        case "afr":
-            return 300;
-        default:
-            return 999;
+            return {
+                image: "/public/images/ping/ping-unknown.png",
+                ping: 300
+            };
     }
 }
 
@@ -603,7 +605,7 @@ function getCountryImage(country) {
     }
 }
 
-function getServerMoreImage(map) {
+function getServerImageMore(map) {
     switch (map.toLowerCase()) {
         case "mp_mountainfort":
             return {
@@ -1242,9 +1244,8 @@ function getRankImage(rank) {
 export {
     getFilterString,
     isOfficialServer,
-    getPingImage,
-    getPingNumber,
+    getPingImageMore,
     getCountryImage,
-    getServerMoreImage,
+    getServerImageMore,
     getRankImage
 };

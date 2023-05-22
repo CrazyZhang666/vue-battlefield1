@@ -66,6 +66,7 @@ defineProps(["server", "index"]);
     margin-left: 10px;
 
     img {
+      width: 110px;
       height: 70px;
     }
 
@@ -112,6 +113,7 @@ defineProps(["server", "index"]);
         position: absolute;
         left: 40%;
         top: 60%;
+        max-width: 500px;
         box-shadow: 0 0 10px #000;
         background-color: #FFF;
         visibility: collapse;

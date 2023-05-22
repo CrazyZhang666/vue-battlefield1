@@ -6,7 +6,7 @@ import Spinner from "@/components/Spinner.vue";
 import ScoreModal from "@/views/bf1/components/ScoreModal.vue";
 
 import {
-  getServerMoreImage, getCountryImage, isOfficialServer, getPingImage, getPingNumber
+  getServerImageMore, getCountryImage, isOfficialServer, getPingImageMore
 } from "@/utils/server"
 import {isNotEmptyStr} from "@/utils/player";
 import {useConfigStore} from "@/store";
@@ -47,7 +47,8 @@ function searchServers(region) {
 
     res.data.result.gameservers.forEach(item => {
 
-      let imageInfo = getServerMoreImage(item.mapName);
+      let serverMore = getServerImageMore(item.mapName);
+      let pingMore = getPingImageMore(item.country);
 
       let server = {
         gameId: item.gameId,
@@ -65,13 +66,13 @@ function searchServers(region) {
         mapModePretty: item.mapModePretty,
         mapName: item.mapName,
         mapNamePretty: item.mapNamePretty,
-        mapImage: imageInfo.mapImage,
+        mapImage: serverMore.mapImage,
         isCustom: item.custom,
         isOfficial: isOfficialServer(item.serverType),
         isFavorite: item.isFavorite,
         tickRate: item.tickRate,
-        pingImage: getPingImage(item.region),
-        pingNumber: getPingNumber(item.region)
+        pingImage: pingMore.image,
+        pingNumber: pingMore.ping
       }
 
       gameServers.value.push(server);
