@@ -9,13 +9,13 @@ import Avatar from "@/components/Avatar.vue";
         <img src="/public/images/party/party-minimized.png">
       </div>
       <div class="add">
-        <Avatar icon="/public/images/party/icon-add-white.png" color="translate"/>
+        <Avatar icon="images/party/icon-add-white.png" color="translate"/>
       </div>
       <div class="playing">
         <img src="/public/images/party/playing-minimized.png">
       </div>
       <div class="playing-list">
-        <Avatar icon="/public/images/menu/menu-icon-player.png" v-for="index of 20" :key="index"/>
+        <Avatar icon="images/menu/menu-icon-player.png" v-for="index of 20" :key="index"/>
       </div>
     </div>
   </div>

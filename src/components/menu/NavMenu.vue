@@ -5,18 +5,18 @@ import Menu from "@/components/Menu.vue";
 <template>
   <div class="main-nav">
     <div class="menu-top">
-      <Menu icon="/public/images/menu/menu-icon-bfv.png" hint="《戰地風雲5》"/>
-      <Menu icon="/public/images/menu/menu-icon-bf1.png" is-active="true" hint="《BATTLEFIELD 1》"/>
-      <Menu icon="/public/images/menu/menu-icon-bf4.png" hint="《戰地風雲4》"/>
-      <Menu icon="/public/images/menu/menu-icon-bfh.png" hint="《戰地風雲 : HARDLINE》"/>
-      <Menu icon="/public/images/menu/menu-icon-player.png" hint="《職涯》"/>
-      <Menu icon="/public/images/menu/menu-icon-platoons.png" hint="《戰隊》"/>
-      <Menu icon="/public/images/menu/menu-icon-video.png" hint="《觀賞》"/>
-      <Menu icon="/public/images/menu/menu-icon-news.png" hint="《最新消息》"/>
+      <Menu icon="images/menu/menu-icon-bfv.png" hint="《戰地風雲5》"/>
+      <Menu icon="images/menu/menu-icon-bf1.png" is-active="true" hint="《BATTLEFIELD 1》"/>
+      <Menu icon="images/menu/menu-icon-bf4.png" hint="《戰地風雲4》"/>
+      <Menu icon="images/menu/menu-icon-bfh.png" hint="《戰地風雲 : HARDLINE》"/>
+      <Menu icon="images/menu/menu-icon-player.png" hint="《職涯》"/>
+      <Menu icon="images/menu/menu-icon-platoons.png" hint="《戰隊》"/>
+      <Menu icon="images/menu/menu-icon-video.png" hint="《觀賞》"/>
+      <Menu icon="images/menu/menu-icon-news.png" hint="《最新消息》"/>
     </div>
     <div class="menu-bottom">
-      <Menu icon="/public/images/menu/menu-icon-help.png" mar-bottom="0px" hint="《幫助》"/>
-      <Menu icon="/public/images/menu/menu-icon-quit.png" mar-bottom="0px" hint="《離開》"/>
+      <Menu icon="images/menu/menu-icon-help.png" mar-bottom="0px" hint="《幫助》"/>
+      <Menu icon="images/menu/menu-icon-quit.png" mar-bottom="0px" hint="《離開》"/>
     </div>
   </div>
 </template>
