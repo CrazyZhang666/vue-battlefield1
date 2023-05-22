@@ -1,9 +1,5 @@
 <script setup>
 import Avatar from "@/components/Avatar.vue";
-
-import icon_player from "../../../public/images/menu/menu-icon-player.png";
-import icon_add from "../../../public/images/party/icon-add-white.png";
-
 </script>
 
 <template>
@@ -13,13 +9,13 @@ import icon_add from "../../../public/images/party/icon-add-white.png";
         <img src="/public/images/party/party-minimized.png">
       </div>
       <div class="add">
-        <Avatar :icon="icon_add" color="translate"/>
+        <Avatar icon="/public/images/party/icon-add-white.png" color="translate"/>
       </div>
       <div class="playing">
         <img src="/public/images/party/playing-minimized.png">
       </div>
       <div class="playing-list">
-        <Avatar :icon="icon_player" v-for="index of 20" :key="index"/>
+        <Avatar icon="/public/images/menu/menu-icon-player.png" v-for="index of 20" :key="index"/>
       </div>
     </div>
   </div>
