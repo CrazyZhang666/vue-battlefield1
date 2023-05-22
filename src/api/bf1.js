@@ -76,9 +76,33 @@ function bf1_getBlazePlayerList(gameId) {
     });
 }
 
+function bf1_getBlazePlayerCore(pidArray) {
+    return instance({
+        method: "post",
+        url: '/blaze/Stats.getStats',
+        data: {
+            "CAT String": "player_core",
+            "EID List<Integer>": pidArray
+        }
+    });
+}
+
+function bf1_getBlazePlayerStatCategory(pidArray) {
+    return instance({
+        method: "post",
+        url: '/blaze/Stats.getStats',
+        data: {
+            "CAT String": "player_statcategory",
+            "EID List<Integer>": pidArray
+        }
+    });
+}
+
 export {
     bf1_setLocale,
     bf1_welcomeMessage,
     bf1_searchServers,
-    bf1_getBlazePlayerList
+    bf1_getBlazePlayerList,
+    bf1_getBlazePlayerCore,
+    bf1_getBlazePlayerStatCategory
 }

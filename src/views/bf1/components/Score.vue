@@ -114,9 +114,9 @@ onMounted(() => {
           ({{ server.spectator }})
         </div>
         <div>|</div>
-        <div>{{ server.gameId}}</div>
+        <div>{{ server.gameId }}</div>
         <div>|</div>
-        <div>{{ server.guid}}</div>
+        <div>{{ server.guid }}</div>
       </div>
     </div>
     <div class="content">
@@ -185,7 +185,7 @@ onMounted(() => {
     height: 100%;
     overflow: auto;
     display: flex;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 
     .team {
       flex: 1;
