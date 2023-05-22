@@ -56,6 +56,7 @@ const props = defineProps({
   }
 
   .rank-150 {
+    color: white;
     background-color: #E7B959;
   }
 

@@ -26,7 +26,7 @@ onMounted(() => {
     data.PROS.forEach(item => {
       let player = {
         teamId: item.TIDX,
-        pid: item.EXID,
+        pid: item.PID,
         rank: getPlayerRank(item.PATT.rank),
         name: item.NAME,
         playTime: getPlayerTime(item.TIME),
@@ -85,7 +85,7 @@ onMounted(() => {
       }
     });
 
-    // console.log(team1Player)
+    console.log(team1Player)
     // console.log(team2Player)
 
     isLoading.value = false;
