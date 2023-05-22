@@ -5,7 +5,6 @@ import {getPlayerRank, getPlayerTime} from "@/utils/player";
 
 import Player from "@/views/bf1/components/Player.vue";
 import Spinner from "@/components/Spinner.vue";
-import {tr} from "date-fns/locale";
 
 const props = defineProps({
   server: Object
@@ -85,7 +84,7 @@ onMounted(() => {
       }
     });
 
-    console.log(team1Player)
+    // console.log(team1Player)
     // console.log(team2Player)
 
     isLoading.value = false;
@@ -101,7 +100,24 @@ onMounted(() => {
 <template>
   <div class="score-main">
     <div class="header">
-      <div>{{ server.name }}</div>
+      <div class="title">{{ server.name }}</div>
+      <div class="details">
+        <img :src="server.regionImage" :title="server.region"/>
+        <div>{{ server.mapModePretty }} - {{ server.mapNamePretty }}</div>
+        <div v-if="server.isCustom">&nbsp;-</div>
+        <div class="custom" v-if="server.isCustom">&nbsp;自定</div>
+        <div>&nbsp;- {{ server.tickRate }}HZ</div>
+        <div class="official" v-if="server.isOfficial">[官服]</div>
+        <div>|</div>
+        <div class="count">
+          {{ server.soldier }} / {{ server.maxSoldier }} [{{ server.queue }}]
+          ({{ server.spectator }})
+        </div>
+        <div>|</div>
+        <div>{{ server.gameId}}</div>
+        <div>|</div>
+        <div>{{ server.guid}}</div>
+      </div>
     </div>
     <div class="content">
       <div class="team team1">
@@ -125,9 +141,43 @@ onMounted(() => {
   overflow: hidden;
 
   .header {
-    font-size: 24px;
-    margin: 20px;
-    text-align: center;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 12px;
+
+      > div {
+        margin-right: 10px;
+      }
+
+      img {
+        width: 20px;
+        box-shadow: 0 0 3px black;
+        margin-right: 10px;
+      }
+
+      .custom {
+        color: #FF9900;
+      }
+
+      .official {
+        color: #02A0E2;
+      }
+
+      .count {
+      }
+    }
   }
 
   .content {

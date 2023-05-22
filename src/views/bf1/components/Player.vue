@@ -43,6 +43,7 @@ const props = defineProps({
   }
 
   .rankImage {
+    width: 24px;
     height: 24px;
     margin-right: @item-margin;
   }

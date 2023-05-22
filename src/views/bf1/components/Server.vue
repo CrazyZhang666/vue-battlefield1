@@ -11,7 +11,7 @@ defineProps(["server", "index"]);
     </div>
     <!-- 服务器信息 -->
     <div class="server-info">
-      <div class="prefix">{{ server.name }}</div>
+      <div class="title">{{ server.name }}</div>
       <div class="description">
         {{ server.description }}
         <div class="tooltip">
@@ -19,7 +19,7 @@ defineProps(["server", "index"]);
           <div>{{ server.description }}</div>
         </div>
       </div>
-      <div class="map">
+      <div class="details">
         <img :src="server.regionImage" :title="server.region"/>
         <div>{{ server.mapModePretty }} - {{ server.mapNamePretty }}</div>
         <div v-if="server.isCustom">&nbsp;-</div>
@@ -82,7 +82,7 @@ defineProps(["server", "index"]);
     flex: 1;
     margin: 0px 10px;
 
-    .prefix,
+    .title,
     .description {
       word-wrap: break-word;
       word-break: break-all;
@@ -93,7 +93,7 @@ defineProps(["server", "index"]);
       -webkit-box-orient: vertical;
     }
 
-    .prefix {
+    .title {
       font-size: 16px;
       font-weight: bold;
       -webkit-line-clamp: 1;
@@ -131,7 +131,7 @@ defineProps(["server", "index"]);
       }
     }
 
-    .map {
+    .details {
       display: flex;
       flex-direction: row;
       align-items: center;
