@@ -38,6 +38,7 @@ const props = defineProps({
   .index {
     width: 16px;
     font-size: 12px;
+    text-align: right;
     margin-right: @item-margin;
   }
 

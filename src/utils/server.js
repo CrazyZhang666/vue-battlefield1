@@ -44,157 +44,193 @@ import ping_bad from "@/assets/images/ping/ping-bad.png";
 import ping_worst from "@/assets/images/ping/ping-worst.png";
 import ping_unknown from "@/assets/images/ping/ping-unknown.png";
 
-import rank_0 from "@/assets/images/rank/0.png"
-import rank_1 from "@/assets/images/rank/1.png"
-import rank_2 from "@/assets/images/rank/2.png"
-import rank_3 from "@/assets/images/rank/3.png"
-import rank_4 from "@/assets/images/rank/4.png"
-import rank_5 from "@/assets/images/rank/5.png"
-import rank_6 from "@/assets/images/rank/6.png"
-import rank_7 from "@/assets/images/rank/7.png"
-import rank_8 from "@/assets/images/rank/8.png"
-import rank_9 from "@/assets/images/rank/9.png"
-import rank_10 from "@/assets/images/rank/10.png"
-import rank_11 from "@/assets/images/rank/11.png"
-import rank_12 from "@/assets/images/rank/12.png"
-import rank_13 from "@/assets/images/rank/13.png"
-import rank_14 from "@/assets/images/rank/14.png"
-import rank_15 from "@/assets/images/rank/15.png"
-import rank_16 from "@/assets/images/rank/16.png"
-import rank_17 from "@/assets/images/rank/17.png"
-import rank_18 from "@/assets/images/rank/18.png"
-import rank_19 from "@/assets/images/rank/19.png"
-import rank_20 from "@/assets/images/rank/20.png"
-import rank_21 from "@/assets/images/rank/21.png"
-import rank_22 from "@/assets/images/rank/22.png"
-import rank_23 from "@/assets/images/rank/23.png"
-import rank_24 from "@/assets/images/rank/24.png"
-import rank_25 from "@/assets/images/rank/25.png"
-import rank_26 from "@/assets/images/rank/26.png"
-import rank_27 from "@/assets/images/rank/27.png"
-import rank_28 from "@/assets/images/rank/28.png"
-import rank_29 from "@/assets/images/rank/29.png"
-import rank_30 from "@/assets/images/rank/30.png"
-import rank_31 from "@/assets/images/rank/31.png"
-import rank_32 from "@/assets/images/rank/32.png"
-import rank_33 from "@/assets/images/rank/33.png"
-import rank_34 from "@/assets/images/rank/34.png"
-import rank_35 from "@/assets/images/rank/35.png"
-import rank_36 from "@/assets/images/rank/36.png"
-import rank_37 from "@/assets/images/rank/37.png"
-import rank_38 from "@/assets/images/rank/38.png"
-import rank_39 from "@/assets/images/rank/39.png"
-import rank_40 from "@/assets/images/rank/40.png"
-import rank_41 from "@/assets/images/rank/41.png"
-import rank_42 from "@/assets/images/rank/42.png"
-import rank_43 from "@/assets/images/rank/43.png"
-import rank_44 from "@/assets/images/rank/44.png"
-import rank_45 from "@/assets/images/rank/45.png"
-import rank_46 from "@/assets/images/rank/46.png"
-import rank_47 from "@/assets/images/rank/47.png"
-import rank_48 from "@/assets/images/rank/48.png"
-import rank_49 from "@/assets/images/rank/49.png"
-import rank_50 from "@/assets/images/rank/50.png"
-import rank_51 from "@/assets/images/rank/51.png"
-import rank_52 from "@/assets/images/rank/52.png"
-import rank_53 from "@/assets/images/rank/53.png"
-import rank_54 from "@/assets/images/rank/54.png"
-import rank_55 from "@/assets/images/rank/55.png"
-import rank_56 from "@/assets/images/rank/56.png"
-import rank_57 from "@/assets/images/rank/57.png"
-import rank_58 from "@/assets/images/rank/58.png"
-import rank_59 from "@/assets/images/rank/59.png"
-import rank_60 from "@/assets/images/rank/60.png"
-import rank_61 from "@/assets/images/rank/61.png"
-import rank_62 from "@/assets/images/rank/62.png"
-import rank_63 from "@/assets/images/rank/63.png"
-import rank_64 from "@/assets/images/rank/64.png"
-import rank_65 from "@/assets/images/rank/65.png"
-import rank_66 from "@/assets/images/rank/66.png"
-import rank_67 from "@/assets/images/rank/67.png"
-import rank_68 from "@/assets/images/rank/68.png"
-import rank_69 from "@/assets/images/rank/69.png"
-import rank_70 from "@/assets/images/rank/70.png"
-import rank_71 from "@/assets/images/rank/71.png"
-import rank_72 from "@/assets/images/rank/72.png"
-import rank_73 from "@/assets/images/rank/73.png"
-import rank_74 from "@/assets/images/rank/74.png"
-import rank_75 from "@/assets/images/rank/75.png"
-import rank_76 from "@/assets/images/rank/76.png"
-import rank_77 from "@/assets/images/rank/77.png"
-import rank_78 from "@/assets/images/rank/78.png"
-import rank_79 from "@/assets/images/rank/79.png"
-import rank_80 from "@/assets/images/rank/80.png"
-import rank_81 from "@/assets/images/rank/81.png"
-import rank_82 from "@/assets/images/rank/82.png"
-import rank_83 from "@/assets/images/rank/83.png"
-import rank_84 from "@/assets/images/rank/84.png"
-import rank_85 from "@/assets/images/rank/85.png"
-import rank_86 from "@/assets/images/rank/86.png"
-import rank_87 from "@/assets/images/rank/87.png"
-import rank_88 from "@/assets/images/rank/88.png"
-import rank_89 from "@/assets/images/rank/89.png"
-import rank_90 from "@/assets/images/rank/90.png"
-import rank_91 from "@/assets/images/rank/91.png"
-import rank_92 from "@/assets/images/rank/92.png"
-import rank_93 from "@/assets/images/rank/93.png"
-import rank_94 from "@/assets/images/rank/94.png"
-import rank_95 from "@/assets/images/rank/95.png"
-import rank_96 from "@/assets/images/rank/96.png"
-import rank_97 from "@/assets/images/rank/97.png"
-import rank_98 from "@/assets/images/rank/98.png"
-import rank_99 from "@/assets/images/rank/99.png"
-import rank_100 from "@/assets/images/rank/100.png"
-import rank_101 from "@/assets/images/rank/101.png"
-import rank_102 from "@/assets/images/rank/102.png"
-import rank_103 from "@/assets/images/rank/103.png"
-import rank_104 from "@/assets/images/rank/104.png"
-import rank_105 from "@/assets/images/rank/105.png"
-import rank_106 from "@/assets/images/rank/106.png"
-import rank_107 from "@/assets/images/rank/107.png"
-import rank_108 from "@/assets/images/rank/108.png"
-import rank_109 from "@/assets/images/rank/109.png"
-import rank_110 from "@/assets/images/rank/110.png"
-import rank_111 from "@/assets/images/rank/111.png"
-import rank_112 from "@/assets/images/rank/112.png"
-import rank_113 from "@/assets/images/rank/113.png"
-import rank_114 from "@/assets/images/rank/114.png"
-import rank_115 from "@/assets/images/rank/115.png"
-import rank_116 from "@/assets/images/rank/116.png"
-import rank_117 from "@/assets/images/rank/117.png"
-import rank_118 from "@/assets/images/rank/118.png"
-import rank_119 from "@/assets/images/rank/119.png"
-import rank_120 from "@/assets/images/rank/120.png"
-import rank_121 from "@/assets/images/rank/121.png"
-import rank_122 from "@/assets/images/rank/122.png"
-import rank_123 from "@/assets/images/rank/123.png"
-import rank_124 from "@/assets/images/rank/124.png"
-import rank_125 from "@/assets/images/rank/125.png"
-import rank_126 from "@/assets/images/rank/126.png"
-import rank_127 from "@/assets/images/rank/127.png"
-import rank_128 from "@/assets/images/rank/128.png"
-import rank_129 from "@/assets/images/rank/129.png"
-import rank_130 from "@/assets/images/rank/130.png"
-import rank_131 from "@/assets/images/rank/131.png"
-import rank_132 from "@/assets/images/rank/132.png"
-import rank_133 from "@/assets/images/rank/133.png"
-import rank_134 from "@/assets/images/rank/134.png"
-import rank_135 from "@/assets/images/rank/135.png"
-import rank_136 from "@/assets/images/rank/136.png"
-import rank_137 from "@/assets/images/rank/137.png"
-import rank_138 from "@/assets/images/rank/138.png"
-import rank_139 from "@/assets/images/rank/139.png"
-import rank_140 from "@/assets/images/rank/140.png"
-import rank_141 from "@/assets/images/rank/141.png"
-import rank_142 from "@/assets/images/rank/142.png"
-import rank_143 from "@/assets/images/rank/143.png"
-import rank_144 from "@/assets/images/rank/144.png"
-import rank_145 from "@/assets/images/rank/145.png"
-import rank_146 from "@/assets/images/rank/146.png"
-import rank_147 from "@/assets/images/rank/147.png"
-import rank_148 from "@/assets/images/rank/148.png"
-import rank_149 from "@/assets/images/rank/149.png"
-import rank_150 from "@/assets/images/rank/150.png"
+import rank_0 from "@/assets/images/rank/0.png";
+import rank_1 from "@/assets/images/rank/1.png";
+import rank_2 from "@/assets/images/rank/2.png";
+import rank_3 from "@/assets/images/rank/3.png";
+import rank_4 from "@/assets/images/rank/4.png";
+import rank_5 from "@/assets/images/rank/5.png";
+import rank_6 from "@/assets/images/rank/6.png";
+import rank_7 from "@/assets/images/rank/7.png";
+import rank_8 from "@/assets/images/rank/8.png";
+import rank_9 from "@/assets/images/rank/9.png";
+import rank_10 from "@/assets/images/rank/10.png";
+import rank_11 from "@/assets/images/rank/11.png";
+import rank_12 from "@/assets/images/rank/12.png";
+import rank_13 from "@/assets/images/rank/13.png";
+import rank_14 from "@/assets/images/rank/14.png";
+import rank_15 from "@/assets/images/rank/15.png";
+import rank_16 from "@/assets/images/rank/16.png";
+import rank_17 from "@/assets/images/rank/17.png";
+import rank_18 from "@/assets/images/rank/18.png";
+import rank_19 from "@/assets/images/rank/19.png";
+import rank_20 from "@/assets/images/rank/20.png";
+import rank_21 from "@/assets/images/rank/21.png";
+import rank_22 from "@/assets/images/rank/22.png";
+import rank_23 from "@/assets/images/rank/23.png";
+import rank_24 from "@/assets/images/rank/24.png";
+import rank_25 from "@/assets/images/rank/25.png";
+import rank_26 from "@/assets/images/rank/26.png";
+import rank_27 from "@/assets/images/rank/27.png";
+import rank_28 from "@/assets/images/rank/28.png";
+import rank_29 from "@/assets/images/rank/29.png";
+import rank_30 from "@/assets/images/rank/30.png";
+import rank_31 from "@/assets/images/rank/31.png";
+import rank_32 from "@/assets/images/rank/32.png";
+import rank_33 from "@/assets/images/rank/33.png";
+import rank_34 from "@/assets/images/rank/34.png";
+import rank_35 from "@/assets/images/rank/35.png";
+import rank_36 from "@/assets/images/rank/36.png";
+import rank_37 from "@/assets/images/rank/37.png";
+import rank_38 from "@/assets/images/rank/38.png";
+import rank_39 from "@/assets/images/rank/39.png";
+import rank_40 from "@/assets/images/rank/40.png";
+import rank_41 from "@/assets/images/rank/41.png";
+import rank_42 from "@/assets/images/rank/42.png";
+import rank_43 from "@/assets/images/rank/43.png";
+import rank_44 from "@/assets/images/rank/44.png";
+import rank_45 from "@/assets/images/rank/45.png";
+import rank_46 from "@/assets/images/rank/46.png";
+import rank_47 from "@/assets/images/rank/47.png";
+import rank_48 from "@/assets/images/rank/48.png";
+import rank_49 from "@/assets/images/rank/49.png";
+import rank_50 from "@/assets/images/rank/50.png";
+import rank_51 from "@/assets/images/rank/51.png";
+import rank_52 from "@/assets/images/rank/52.png";
+import rank_53 from "@/assets/images/rank/53.png";
+import rank_54 from "@/assets/images/rank/54.png";
+import rank_55 from "@/assets/images/rank/55.png";
+import rank_56 from "@/assets/images/rank/56.png";
+import rank_57 from "@/assets/images/rank/57.png";
+import rank_58 from "@/assets/images/rank/58.png";
+import rank_59 from "@/assets/images/rank/59.png";
+import rank_60 from "@/assets/images/rank/60.png";
+import rank_61 from "@/assets/images/rank/61.png";
+import rank_62 from "@/assets/images/rank/62.png";
+import rank_63 from "@/assets/images/rank/63.png";
+import rank_64 from "@/assets/images/rank/64.png";
+import rank_65 from "@/assets/images/rank/65.png";
+import rank_66 from "@/assets/images/rank/66.png";
+import rank_67 from "@/assets/images/rank/67.png";
+import rank_68 from "@/assets/images/rank/68.png";
+import rank_69 from "@/assets/images/rank/69.png";
+import rank_70 from "@/assets/images/rank/70.png";
+import rank_71 from "@/assets/images/rank/71.png";
+import rank_72 from "@/assets/images/rank/72.png";
+import rank_73 from "@/assets/images/rank/73.png";
+import rank_74 from "@/assets/images/rank/74.png";
+import rank_75 from "@/assets/images/rank/75.png";
+import rank_76 from "@/assets/images/rank/76.png";
+import rank_77 from "@/assets/images/rank/77.png";
+import rank_78 from "@/assets/images/rank/78.png";
+import rank_79 from "@/assets/images/rank/79.png";
+import rank_80 from "@/assets/images/rank/80.png";
+import rank_81 from "@/assets/images/rank/81.png";
+import rank_82 from "@/assets/images/rank/82.png";
+import rank_83 from "@/assets/images/rank/83.png";
+import rank_84 from "@/assets/images/rank/84.png";
+import rank_85 from "@/assets/images/rank/85.png";
+import rank_86 from "@/assets/images/rank/86.png";
+import rank_87 from "@/assets/images/rank/87.png";
+import rank_88 from "@/assets/images/rank/88.png";
+import rank_89 from "@/assets/images/rank/89.png";
+import rank_90 from "@/assets/images/rank/90.png";
+import rank_91 from "@/assets/images/rank/91.png";
+import rank_92 from "@/assets/images/rank/92.png";
+import rank_93 from "@/assets/images/rank/93.png";
+import rank_94 from "@/assets/images/rank/94.png";
+import rank_95 from "@/assets/images/rank/95.png";
+import rank_96 from "@/assets/images/rank/96.png";
+import rank_97 from "@/assets/images/rank/97.png";
+import rank_98 from "@/assets/images/rank/98.png";
+import rank_99 from "@/assets/images/rank/99.png";
+import rank_100 from "@/assets/images/rank/100.png";
+import rank_101 from "@/assets/images/rank/101.png";
+import rank_102 from "@/assets/images/rank/102.png";
+import rank_103 from "@/assets/images/rank/103.png";
+import rank_104 from "@/assets/images/rank/104.png";
+import rank_105 from "@/assets/images/rank/105.png";
+import rank_106 from "@/assets/images/rank/106.png";
+import rank_107 from "@/assets/images/rank/107.png";
+import rank_108 from "@/assets/images/rank/108.png";
+import rank_109 from "@/assets/images/rank/109.png";
+import rank_110 from "@/assets/images/rank/110.png";
+import rank_111 from "@/assets/images/rank/111.png";
+import rank_112 from "@/assets/images/rank/112.png";
+import rank_113 from "@/assets/images/rank/113.png";
+import rank_114 from "@/assets/images/rank/114.png";
+import rank_115 from "@/assets/images/rank/115.png";
+import rank_116 from "@/assets/images/rank/116.png";
+import rank_117 from "@/assets/images/rank/117.png";
+import rank_118 from "@/assets/images/rank/118.png";
+import rank_119 from "@/assets/images/rank/119.png";
+import rank_120 from "@/assets/images/rank/120.png";
+import rank_121 from "@/assets/images/rank/121.png";
+import rank_122 from "@/assets/images/rank/122.png";
+import rank_123 from "@/assets/images/rank/123.png";
+import rank_124 from "@/assets/images/rank/124.png";
+import rank_125 from "@/assets/images/rank/125.png";
+import rank_126 from "@/assets/images/rank/126.png";
+import rank_127 from "@/assets/images/rank/127.png";
+import rank_128 from "@/assets/images/rank/128.png";
+import rank_129 from "@/assets/images/rank/129.png";
+import rank_130 from "@/assets/images/rank/130.png";
+import rank_131 from "@/assets/images/rank/131.png";
+import rank_132 from "@/assets/images/rank/132.png";
+import rank_133 from "@/assets/images/rank/133.png";
+import rank_134 from "@/assets/images/rank/134.png";
+import rank_135 from "@/assets/images/rank/135.png";
+import rank_136 from "@/assets/images/rank/136.png";
+import rank_137 from "@/assets/images/rank/137.png";
+import rank_138 from "@/assets/images/rank/138.png";
+import rank_139 from "@/assets/images/rank/139.png";
+import rank_140 from "@/assets/images/rank/140.png";
+import rank_141 from "@/assets/images/rank/141.png";
+import rank_142 from "@/assets/images/rank/142.png";
+import rank_143 from "@/assets/images/rank/143.png";
+import rank_144 from "@/assets/images/rank/144.png";
+import rank_145 from "@/assets/images/rank/145.png";
+import rank_146 from "@/assets/images/rank/146.png";
+import rank_147 from "@/assets/images/rank/147.png";
+import rank_148 from "@/assets/images/rank/148.png";
+import rank_149 from "@/assets/images/rank/149.png";
+import rank_150 from "@/assets/images/rank/150.png";
+
+import faction_ahu from "@/assets/images/faction/BFFactionId_FactionAHU.png";
+import faction_ger from "@/assets/images/faction/BFFactionId_FactionGER.png";
+import faction_ita from "@/assets/images/faction/BFFactionId_FactionITA.png";
+import faction_otm from "@/assets/images/faction/BFFactionId_FactionOTM.png";
+import faction_uk from "@/assets/images/faction/BFFactionId_FactionUK.png";
+import faction_usa from "@/assets/images/faction/BFFactionId_FactionUSA.png";
+import faction_fra from "@/assets/images/faction/BFFactionId_FactionFRA.png";
+import faction_rus from "@/assets/images/faction/BFFactionId_FactionRUS.png";
+import faction_bol from "@/assets/images/faction/BFFactionId_FactionBOL.png";
+import faction_wa from "@/assets/images/faction/BFFactionId_FactionWA.png";
+import faction_ott from "@/assets/images/faction/BFFactionId_FactionOTT.png";
+import faction_ukg from "@/assets/images/faction/BFFactionId_FactionUKG.png";
+import faction_ukm from "@/assets/images/faction/BFFactionId_FactionUKM.png";
+
+const AHU = "奧匈帝國";
+const GER = "德意志帝國";
+const ITA = "義大利王國";
+const OTM = "鄂圖曼帝國";
+const UK = "大英帝國";
+const USA = "美利堅合眾國";
+const FRA = "法國";
+const RUS = "俄羅斯帝國";
+const BOL = "紅軍";
+const WA = "白軍";
+const OTT = "鄂圖曼帝國";
+const UKG = "大英帝國";
+const UKM = "皇家海軍陸戰隊";
+
+const NAm = "北美洲";
+const SAm = "南美洲";
+const AC = "南極洲";
+const Afr = "非洲";
+const EU = "歐洲";
+const Asia = "亞洲";
+const OC = "大洋洲";
 
 function getMapImageMedium(map) {
     switch (map.toLowerCase()) {
@@ -274,6 +310,7 @@ const filter = {
         oneToFive: "on",
         sixToTen: "on",
         tenPlus: "on",
+        // all: "on",
         spectator: "on",
     }, regions: {
         Asia: "off",
@@ -689,6 +726,237 @@ function getRankImage(rank) {
     }
 }
 
+function getTeamInfo(map) {
+    switch (map.toLocaleString()) {
+        case "mp_mountainfort":
+            return {
+                team1Name: ITA,
+                team1Image: faction_ita,
+                team2Name: AHU,
+                team2Image: faction_ahu,
+            };
+        case "mp_forest":
+            return {
+                team1Name: USA,
+                team1Image: faction_usa,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_italiancoast":
+            return {
+                team1Name: ITA,
+                team1Image: faction_ita,
+                team2Name: AHU,
+                team2Image: faction_ahu,
+            };
+        case "mp_chateau":
+            return {
+                team1Name: USA,
+                team1Image: faction_usa,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_scar":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: UK,
+                team2Image: faction_uk,
+            };
+        case "mp_desert":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: OTM,
+                team2Image: faction_otm,
+            };
+        case "mp_amiens":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: UK,
+                team2Image: faction_uk,
+            };
+        case "mp_suez":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: OTM,
+                team2Image: faction_otm,
+            };
+        case "mp_faofortress":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: OTM,
+                team2Image: faction_otm,
+            };
+        case "mp_giant":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_fields":
+            return {
+                team1Name: FRA,
+                team1Image: faction_fra,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_graveyard":
+            return {
+                team1Name: FRA,
+                team1Image: faction_fra,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_underworld":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: FRA,
+                team2Image: faction_fra,
+            };
+        case "mp_verdun":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: FRA,
+                team2Image: faction_fra,
+            };
+        case "mp_trench":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: FRA,
+                team2Image: faction_fra,
+            };
+        case "mp_shoveltown":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: FRA,
+                team2Image: faction_fra,
+            };
+        case "mp_bridge":
+            return {
+                team1Name: RUS,
+                team1Image: faction_rus,
+                team2Name: AHU,
+                team2Image: faction_ahu,
+            };
+        case "mp_islands":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: RUS,
+                team2Image: faction_rus,
+            };
+        case "mp_ravines":
+            return {
+                team1Name: AHU,
+                team1Image: faction_ahu,
+                team2Name: RUS,
+                team2Image: faction_rus,
+            };
+        case "mp_valley":
+            return {
+                team1Name: RUS,
+                team1Image: faction_rus,
+                team2Name: AHU,
+                team2Image: faction_ahu,
+            };
+        case "mp_tsaritsyn":
+            return {
+                team1Name: BOL,
+                team1Image: faction_bol,
+                team2Name: RUS,
+                team2Image: faction_rus,
+            };
+        case "mp_volga":
+            return {
+                team1Name: BOL,
+                team1Image: faction_bol,
+                team2Name: RUS,
+                team2Image: faction_rus,
+            };
+        case "mp_beachhead":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: OTM,
+                team2Image: faction_otm,
+            };
+        case "mp_harbor":
+            return {
+                team1Name: RM,
+                team1Image: faction_rm,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_naval":
+            return {
+                team1Name: RM,
+                team1Image: faction_rm,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_ridge":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: OTM,
+                team2Image: faction_otm,
+            };
+        case "mp_offensive":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_hell":
+            return {
+                team1Name: UK,
+                team1Image: faction_uk,
+                team2Name: GER,
+                team2Image: faction_ger,
+            };
+        case "mp_river":
+            return {
+                team1Name: AHU,
+                team1Image: faction_ahu,
+                team2Name: ITA,
+                team2Image: faction_ita,
+            };
+        case "mp_alps":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: UK,
+                team2Image: faction_uk,
+            };
+        case "mp_blitz":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: UK,
+                team2Image: faction_uk,
+            };
+        case "mp_london":
+            return {
+                team1Name: GER,
+                team1Image: faction_ger,
+                team2Name: UK,
+                team2Image: faction_uk,
+            };
+        default:
+            return {};
+    }
+}
+
 export {
     getMapImageMedium,
     getFilterString,
@@ -696,5 +964,6 @@ export {
     isOfficialServer,
     getPingImage,
     getPingNumber,
-    getRankImage
+    getRankImage,
+    getTeamInfo
 };

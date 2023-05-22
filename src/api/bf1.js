@@ -7,6 +7,24 @@ import {getFilterString} from "@/utils/server";
 
 const store = useConfigStore();
 
+function bf1_setLocale() {
+    return instance({
+        method: "post",
+        url: "/gateway/jsonrpc/pc/api",
+        headers: {
+            "X-GatewaySession": store.sessionId
+        },
+        data: {
+            "jsonrpc": "2.0",
+            "method": "CompanionSettings.setLocale",
+            "params": {
+                "locale": "zh_TW"
+            },
+            "id": uuidv4()
+        }
+    });
+}
+
 function bf1_welcomeMessage() {
     return instance({
         method: "post",
@@ -59,6 +77,7 @@ function bf1_getBlazePlayerList(gameId) {
 }
 
 export {
+    bf1_setLocale,
     bf1_welcomeMessage,
     bf1_searchServers,
     bf1_getBlazePlayerList

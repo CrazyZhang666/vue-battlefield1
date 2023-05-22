@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from "vue";
 import {useConfigStore} from "@/store";
-import {bf1_welcomeMessage} from "@/api/bf1"
+import {bf1_setLocale, bf1_welcomeMessage} from "@/api/bf1"
 import {isNotEmptyStr} from "@/utils/player";
 
 const store = useConfigStore();
@@ -16,9 +16,15 @@ async function checkSessionId() {
 
   welcomeMsg.value = "正在驗證中，請稍後...";
 
-  bf1_welcomeMessage().then((res) => {
+  bf1_setLocale().then(res => {
+
+  }).catch(err => {
+
+  });
+
+  bf1_welcomeMessage().then(res => {
     welcomeMsg.value = res.data.result.firstMessage;
-  }).catch((err) => {
+  }).catch(err => {
     welcomeMsg.value = `${err.response.status}  ${err.response.data.error.message}`;
   });
 
