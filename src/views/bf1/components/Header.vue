@@ -83,9 +83,9 @@ function onChangeRadio(id, event) {
     </div>
     <div class="logo">
       <div class="rank">
-        <img class="rank-logo" src="/public/images/rank/rank-150.png">
+        <img class="rank-logo" src="@/assets/images/rank/rank-150.png">
       </div>
-      <img class="logo-premium" src="/public/images/logo/logo-premium-pc.png">
+      <img class="logo-premium" src="@/assets/images/logo/logo-premium-pc.png">
     </div>
   </div>
 </template>
